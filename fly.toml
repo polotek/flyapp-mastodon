@@ -17,9 +17,13 @@ kill_timeout = "5s"
   RAILS_ENV = "production"
   RAILS_LOG_TO_STDOUT = "enabled"
   RAILS_SERVE_STATIC_FILES = "false"
-  REDIS_HOST = "polotek-social-redis.internal"
-  REDIS_PORT = "6379"
-  REDIS_URL = "redis://polotek-social-redis.internal:6379/?family=6"
+
+  ## Uncomment this section if you are deploying your own redis
+  ## If you are using the recommended upstash deploy, you don't need it.
+  # REDIS_HOST = "polotek-social-redis.internal"
+  # REDIS_PORT = "6379"
+  # REDIS_URL = "redis://polotek-social-redis.internal:6379/?family=6"
+
   ## Storage on S3 also requires secrets named AWS_ACCESS_KEY_ID and 
   ## AWS_SECRET_ACCESS_KEY. If you use this, remove [mounts] below.
   # S3_ENABLED=true
