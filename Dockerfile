@@ -21,5 +21,7 @@ RUN wget "https://github.com/DarthSim/overmind/releases/download/v2.4.0/overmind
 
 ADD Procfile Caddyfile /opt/mastodon/
 
+ENV PATH="${PATH}:/opt/ruby/bin:/opt/mastodon/bin"
+
 ENTRYPOINT []
 CMD ["./overmind", "start"]
